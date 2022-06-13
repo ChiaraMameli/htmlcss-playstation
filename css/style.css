@@ -1,0 +1,24 @@
+/* PER INIZIARE */
+
+section {
+    min-height: 500px;
+    border: 1px solid black;
+}
+
+._h-500 {
+    height: 500px;
+}
+
+._h-200 {
+    height: 200px;
+}
+
+._red-b {
+    border: 1px solid red;
+}
+
+._card {
+    height: 100%;
+    background-color: aqua;
+    
+}
