@@ -12,7 +12,6 @@ ul {
 a {
     text-decoration: none;
 }
-
 /* UTILITIES */
 
 ._bg-grey {
@@ -31,6 +30,15 @@ a {
     background-color: #00439C;
 }
 
+._bg-lighterblue {
+    background-color: #2D64E6;
+}
+
+._bg-red {
+    background-color: #CD3E2B;
+}
+
+
 ._h-500 {
     height: 500px;
 }
@@ -40,16 +48,18 @@ a {
 }
 
 /* JUMBOTRON */
-
 #jumbotron {
+    height: 600px;
     background-image: url(/img/jumbo-bg.png);
-    background-position: center;
-    background-size: cover;
 }
 
 #jumbotron-2 {
     background-image: url(/img/it-takes-two-hero-banner-desktop.jpg);
+}
+
+[id^="jumbotron"] {
     background-size: cover;
+    background-position: center;
 }
 
 [id^="jumbotron"] img {
@@ -58,13 +68,45 @@ a {
 
 /* CONSOLE PS5 */
 
-#thumbneils img{
+#thumbnails img{
     max-width: 50%;
+}
+
+#thumbnails div:first-child {
+    border-bottom: 2px solid #2D64E6;
 }
 
 /* FOOTER */
 
-footer .language img,
-footer .sie img {
+footer .language img {
     height: 1rem;
+}
+
+footer .sie img {
+    height: 3rem;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 768px) {
+    .ps-description {
+        max-width: 50%;
+    }
+
+    .logo-split {
+        max-width: 80%;
+    }
+}
+
+
+
+
+@media screen and (min-width: 992px) {
+    #playstation-plus {
+        min-height: 400px;
+    }
+    
+    #playstation-plus figure img {
+        min-height: 400px;
+    }
 }
