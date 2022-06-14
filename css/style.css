@@ -12,6 +12,7 @@ ul {
 a {
     text-decoration: none;
 }
+
 /* UTILITIES */
 
 ._bg-grey {
@@ -77,11 +78,11 @@ div#search > * {
 /* JUMBOTRON */
 #jumbotron {
     height: 600px;
-    background-image: url(/img/jumbo-bg.png);
+    background-image: url(../img/jumbo-bg.png);
 }
 
 #jumbotron-2 {
-    background-image: url(/img/it-takes-two-hero-banner-desktop.jpg);
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
 }
 
 [id^="jumbotron"] {
