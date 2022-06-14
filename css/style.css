@@ -38,6 +38,9 @@ a {
     background-color: #CD3E2B;
 }
 
+._bg-white {
+    background-color: #FFF;
+}
 
 ._h-500 {
     height: 500px;
@@ -45,6 +48,30 @@ a {
 
 ._h-200 {
     height: 200px;
+}
+
+/* HEADER */
+
+#header-top {
+    background-color: #000;
+    height: 30px;
+}
+
+#header-top img {
+    padding: 8px;
+    text-align: end;
+}
+
+._dropdown-menu {
+    width: 30rem;
+}
+
+#search img {
+    width: 2rem;
+}
+
+div#search > * {
+    padding: 8px;
 }
 
 /* JUMBOTRON */
