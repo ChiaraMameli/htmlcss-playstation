@@ -28,7 +28,11 @@ img {
     max-width: 100%;
 }
 
+/* UTILITIES */
 
+._bg-grey {
+    background-color: #1F1F1F;
+}
 
 /* JUMBOTRON */
 
@@ -38,7 +42,12 @@ img {
     background-size: cover;
 }
 
-#jumbotron img {
+#jumbotron-2 {
+    background-image: url(/img/it-takes-two-hero-banner-desktop.jpg);
+    background-size: cover;
+}
+
+[id^="jumbotron"] img {
     width: 60%;
 }
 
