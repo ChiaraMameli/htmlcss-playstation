@@ -1,7 +1,7 @@
 /* PER INIZIARE */
 
 section {
-    min-height: 500px;
+    /* min-height: 500px; */
     border: 1px solid black;
 }
 
@@ -23,9 +23,9 @@ section {
 
 }
 
-
 img {
     max-width: 100%;
+    max-height: 100%;
 }
 
 /* UTILITIES */
@@ -33,6 +33,16 @@ img {
 ._bg-grey {
     background-color: #1F1F1F;
 }
+
+._bg-lightgrey {
+    background-color: #BEBCBB;
+}
+
+._bg-blue {
+    background-color: #161C3B;
+}
+
+
 
 /* JUMBOTRON */
 
@@ -56,3 +66,8 @@ img {
 #thumbneils img{
     max-width: 50%;
 }
+
+/* PLAYSTATION PLUS */
+
+
+/* MEDIA QUERIES */
