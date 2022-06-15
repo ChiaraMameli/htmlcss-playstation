@@ -122,8 +122,14 @@ div#search > * {
     max-width: 50%;
 }
 
-#thumbnails div:first-child {
+#thumbnails > * {
+    opacity: 0.6;
+}
+
+#thumbnails > *:hover {
     border-bottom: 2px solid #2D64E6;
+    opacity: 1;
+
 }
 
 /* FOOTER */
