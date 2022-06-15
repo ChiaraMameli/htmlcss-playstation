@@ -26,10 +26,6 @@ a {
     text-decoration: none;
 }
 
-body {
-    padding-top: 106px;
-}
-
 /* UTILITIES */
 
 ._bg-grey {
@@ -73,19 +69,7 @@ body {
     height: 500px;
 }
 
-._h-200 {
-    height: 200px;
-}
-
 /* HEADER */
-
-header {
-    position: fixed;
-    right: 0;
-    top: 0;
-    left: 0;
-    z-index: 2;
-}
 
 #header-top {
     background-color: #000;
@@ -105,11 +89,13 @@ header {
     width: 2rem;
 }
 
-div#search > * {
-    padding: 8px;
+#header-bottom li:hover,
+#search a:hover{
+    opacity: 0.5;
 }
 
 /* JUMBOTRON */
+
 #jumbotron {
     height: 600px;
     background-image: url(../img/jumbo-bg.png);
@@ -138,7 +124,6 @@ div#search > * {
     transform: translateY(-25%);
 }
 
-
 /* CONSOLE PS5 */
 
 #thumbnails img{
@@ -152,6 +137,12 @@ div#search > * {
 #thumbnails > *:hover {
     border-bottom: 2px solid #2D64E6;
     opacity: 1;
+}
+
+/* PLAYSTATION PLUS */
+
+#playstation-plus img {
+    right: 2rem;
 }
 
 /* FOOTER */
@@ -204,6 +195,9 @@ footer .sie img {
     border: 1px solid #FFF;
 }
 
+._btn._bg-black._btn-border::before {
+    border: 1px solid #000;
+}
 
 ._btn._btn-border:hover::before {
     top: calc(var(--border-size) * -2);
