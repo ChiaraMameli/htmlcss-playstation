@@ -1,3 +1,16 @@
+/* ROOT */
+:root {
+    --border-size: 2px;
+    --red: #CD3E2B;
+    --grey: #1F1F1F;
+    --lightgrey: #BEBCBB;
+    --lightergrey: #D9DADC;
+    --blue: #161C3B;
+    --lightblue: #00439C;
+    --lighterblue: #2D64E6;
+    
+}
+
 /* GENERICS */
 
 img {
@@ -16,32 +29,41 @@ a {
 /* UTILITIES */
 
 ._bg-grey {
-    background-color: #1F1F1F;
+    background-color: var(--grey);
 }
 
 ._bg-lightgrey {
-    background-color: #BEBCBB;
+    background-color: var(--lightgrey);
+}
+
+._bg-lightergrey {
+    background-color: var(--lightergrey);
 }
 
 ._bg-blue {
-    background-color: #161C3B;
+    background-color: var(--blue);
 }
 
 ._bg-lightblue {
-    background-color: #00439C;
+    background-color: var(--lightblue);
 }
 
 ._bg-lighterblue {
-    background-color: #2D64E6;
+    background-color: var(--lighterblue);
 }
 
 ._bg-red {
-    background-color: #CD3E2B;
+    background-color: var(--red);
 }
 
 ._bg-white {
     background-color: #FFF;
 }
+
+._bg-black {
+    background-color: #000;
+}
+
 
 ._h-500 {
     height: 500px;
@@ -114,6 +136,54 @@ footer .sie img {
     height: 3rem;
 }
 
+/* BUTTONS */
+
+._btn {
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    max-width: fit-content;
+    border-radius: 50px;
+}
+
+._btn._btn-border::before {
+    content: "";
+    position:absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 50px;
+    transition: top, bottom, left, right, 100ms ease-in-out;
+}
+
+._btn._bg-red._btn-border::before {
+    border: 1px solid var(--red);
+}
+
+._btn._bg-lighterblue._btn-border::before {
+    border: 1px solid var(--lighterblue);
+}
+
+._btn._bg-lightergrey._btn-border::before {
+    border: 1px solid var(--lightergrey);
+}
+
+._btn._bg-white._btn-border::before {
+    border: 1px solid #FFF;
+}
+
+
+._btn._btn-border:hover::before {
+    top: calc(var(--border-size) * -2);
+    bottom: calc(var(--border-size) * -2);
+    right: calc(var(--border-size) * -2);
+    left: calc(var(--border-size) * -2);
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 768px) {
@@ -126,9 +196,6 @@ footer .sie img {
     }
 }
 
-
-
-
 @media screen and (min-width: 992px) {
     #playstation-plus {
         min-height: 400px;
@@ -138,3 +205,4 @@ footer .sie img {
         min-height: 400px;
     }
 }
+
