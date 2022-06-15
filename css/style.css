@@ -26,6 +26,10 @@ a {
     text-decoration: none;
 }
 
+body {
+    padding-top: 106px;
+}
+
 /* UTILITIES */
 
 ._bg-grey {
@@ -75,6 +79,14 @@ a {
 
 /* HEADER */
 
+header {
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
 #header-top {
     background-color: #000;
     height: 30px;
@@ -116,6 +128,17 @@ div#search > * {
     width: 60%;
 }
 
+/* DECK */
+
+#deck img {
+    border-radius: 20px;
+}
+
+#deck > * [class^="col"]:hover {
+    transform: translateY(-25%);
+}
+
+
 /* CONSOLE PS5 */
 
 #thumbnails img{
@@ -129,7 +152,6 @@ div#search > * {
 #thumbnails > *:hover {
     border-bottom: 2px solid #2D64E6;
     opacity: 1;
-
 }
 
 /* FOOTER */
@@ -163,7 +185,7 @@ footer .sie img {
     left: 0;
     z-index: 1;
     border-radius: 50px;
-    transition: top, bottom, left, right, 100ms ease-in-out;
+    transition: top, bottom, left, right, 0.1s ease-in-out;
 }
 
 ._btn._bg-red._btn-border::before {
