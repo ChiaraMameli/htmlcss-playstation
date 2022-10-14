@@ -122,6 +122,7 @@ a {
 
 #deck > * [class^="col"]:hover {
     transform: translateY(-25%);
+    cursor: pointer;
 }
 
 /* CONSOLE PS5 */
@@ -137,6 +138,7 @@ a {
 #thumbnails > *:hover {
     border-bottom: 2px solid #2D64E6;
     opacity: 1;
+    cursor: pointer;
 }
 
 /* PLAYSTATION PLUS */
